@@ -1,0 +1,9 @@
+ADT:
+https://dl-ssl.google.com/android/eclipse/
+Vrapper:
+http://vrapper.sourceforge.net/update-site/stable
+CDT:
+http://download.eclipse.org/tools/cdt/releases/helios
+More:
+http://stackoverflow.com/questions/1281814/what-plugins-do-you-use-along-with-eclipse-cdt
+
