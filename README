@@ -1,0 +1,59 @@
+#
+install the android plugin to eclipse, the following step will 
+provide youo how to build all setting which include ndk,sdk,adt and edit platform with vim plugins "vrapper" is optional
+#
+1.first install the ide eclipse that is based on java code so the java 1,6 must installed 
+  before starting it.
+
+(1)run the script by using "sh android_jsk" or sudo sh android_jsk
+(2)and download the eclipse by this website:
+
+1.http://www.eclipse.org/downloads/packages/release/juno/sr1  which could be selected the version of os
+2.http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/SR1/eclipse-jee-juno-SR1-linux-gtk-x86_64.tar.gz  
+which is for 64 bits ubuntu
+
+(3)after installing the eclipse,u can add ADT plugin in eclipse by follwing the below
+1.Start the eclipse and press the "Help" button in the top
+2.select the "Install New Software"
+3.press Add button and add Adt_plugin in the name
+4.add the https://dl-ssl.google.com/android/eclipse/ in Location
+5.and press ok ok and ok , and don't care about any waring informations
+
+(4)download the sdk http://developer.android.com/sdk/index.html in the download for other platforms blue button
+1. unpack it and move it to the directory e.g. name as sdk or development
+
+(5) and add the location of sdk to eclipse by following or this website: http://developer.android.com/sdk/installing/index.html
+1.starting eclipse and press window button
+2.in the left side, there is a android button which will hava sdk location in right side or sdk button
+3.add sdk directory to it
+4.download the android sdk versionr by move to DIR{sdk}/tools and run ./android
+
+(6)ndk download from http://developer.android.com/tools/sdk/ndk/index.html
+1.installation instruction http://developer.android.com/tools/sdk/ndk/index.html#installing
+
+(7)download vrapper by using eclipse same as (3)
+1.the Location change as http://vrapper.sourceforge.net/update-site/stable
+
+(8)install the essential setting by running android_required_packages.sh
+
+(9)some install web site can refer to plugin_download_web.txt and change location by the website which in txt
+#
+If you want to install opencv on eclipse 
+please follw the following steps
+#
+(1)download the opencv by this web http://opencv.org/downloads.html and select the version u want
+(2)and change all "opencv-2.4.6.1" to the name of opencv u download
+(3)run the openCvBuilder.sh 
+(4)add the lib to eclipse by following this web http://docs.opencv.org/doc/tutorials/introduction/linux_eclipse/linux_eclipse.html 
+note that if u want to show image and load image by imread, the location must use /home/usr(xxx)/....
+
+#the basic_installer.sh is for some ubuntu plugins which includes guake terminal and some.....that will add in the future...#
+
+
+
+
+
+
+ 
+
+
