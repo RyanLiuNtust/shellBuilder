@@ -38,7 +38,9 @@ which is for 64 bits ubuntu
 
 (9)some install web site can refer to plugin_download_web.txt and change location by the website which in txt
 
-(10) eclipse using dark theme, pls follow the https://github.com/guari/eclipse-ui-theme 
+(10) eclipse using dark theme, pls follow the https://github.com/guari/eclipse-ui-theme
+
+(11)color theme for character in eclipse http://eclipsecolorthemes.org/?view=plugin
 #
 If you want to install opencv on eclipse 
 please follw the following steps
