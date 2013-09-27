@@ -37,6 +37,8 @@ which is for 64 bits ubuntu
 (8)install the essential setting by running android_required_packages.sh
 
 (9)some install web site can refer to plugin_download_web.txt and change location by the website which in txt
+
+(10) eclipse using dark theme, pls follow the https://github.com/guari/eclipse-ui-theme 
 #
 If you want to install opencv on eclipse 
 please follw the following steps
@@ -48,6 +50,8 @@ please follw the following steps
 note that if u want to show image and load image by imread, the location must use /home/usr(xxx)/....
 
 #the basic_installer.sh is for some ubuntu plugins which includes guake terminal and some.....that will add in the future...#
+
+
 
 
 
