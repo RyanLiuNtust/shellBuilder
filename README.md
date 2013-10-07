@@ -38,29 +38,33 @@ which is for 64 bits ubuntu
 
 (9)some install web site can refer to plugin_download_web.txt and change location by the website which in txt
 
+(10) eclipse using dark theme, pls follow the https://github.com/guari/eclipse-ui-theme
 #
-If you want to install opencv on eclipse 
-please follw the following steps
+If you want to install opencv on eclipse,please follw the following steps
 #
 (1)download the opencv by this web http://opencv.org/downloads.html and select the version u want
 (2)and change all "opencv-2.4.6.1" to the name of opencv u download
 (3)run the openCvBuilder.sh 
 (4)add the lib to eclipse by following this web http://docs.opencv.org/doc/tutorials/introduction/linux_eclipse/linux_eclipse.html 
 note that if u want to show image and load image by imread, the location must use /home/usr(xxx)/....
+
 #opencv_sdk_for_android
-1.Donwload from .............................................
-2.And refer to this web ............. for the instruction of using opencv on android
+1.Donwload from http://docs.opencv.org/doc/tutorials/introduction/android_binary_package/O4A_SDK.html
+2.And refer to this web http://docs.opencv.org/doc/tutorials/introduction/android_binary_package/android_dev_intro.html 
+  for the instruction of using opencv on android
 #
 
-#the basic_installer.sh is for some ubuntu plugins which includes guake terminal and some.....that will add in the future...#
+#the "basic_installer.sh" is for some ubuntu plugins which includes guake terminal and some.....that will add in the future...#
 
 #
 if you want to change the eclipse platform color,please follow the step below
 #
 1. download the eclipse color theme by using eclipse with Help button that will includes the eclipse markerplace
-2. enter the color theme 
-3. downloads the eclipse color theme and eclipse 4 chrome theme
+2. enter the color theme or using URL for color theme in eclipse http://eclipsecolorthemes.org/?view=plugin
+3. downloads the eclipse color theme and "eclipse 4 chrome theme(optional)"
 4. download the dark theme by following this web https://github.com/guari/eclipse-ui-theme
+
+
 
 
  
