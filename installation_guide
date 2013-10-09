@@ -1,0 +1,13 @@
+# Installation for tar.bz2 or gzip,reference: http://www.technoreply.com/how-to-install-sublime-text-2-on-ubuntu-12-04-unity/
+# unpack the tar.bz2 tar -jxvf 
+# unpack the gzip tar -zxvf
+
+1. Application location in ubuntu always place in "opt file"(means /opt/)
+
+At some point you'd want to be able to call some Application from the terminal
+So,to do that,we'll just call a symbolic link in "/user/bin" like thus:
+
+2. sudo ln -s /opt/Sublime \ Text\ 2/sunblime_text /user/bin/Sublime
+3. create a launcher in Unity
+
+

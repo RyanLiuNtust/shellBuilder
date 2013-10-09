@@ -76,7 +76,19 @@ Intsall Dark Theme for eclipse
 * 2.enter the color theme or using URL for color theme in eclipse http://eclipsecolorthemes.org/?view=plugin
 * 3.downloads the eclipse color theme and "eclipse 4 chrome theme(optional)"
 * 4.download the dark theme by following this web https://github.com/guari/eclipse-ui-theme
+*
 
+Include libarary in eclipse
+---------------------------
+
+*_ Boost libarary
+* 1. Project -> property
+* 2. C++ Builder-> setting
+* 3. GCC C++ Linker-> Libraries 
+* 4. ADD libary where is apllied below
+* (1) if file add with libaryname+_+ filename ,e.g. boost_timer
+* (2) else e.g. timer.hpp do not need to add anything
+* 5. ADD library search path e.g. /user/include (where is apt-get install application)
 
 
 
