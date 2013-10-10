@@ -78,7 +78,7 @@ Intsall Dark Theme for eclipse
 * 4.download the dark theme by following this web https://github.com/guari/eclipse-ui-theme
 *
 
-Include libarary in eclipse
+Guide for including libarary in eclipse
 ---------------------------
 
 *_ Boost libarary

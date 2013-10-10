@@ -1,0 +1,20 @@
+1. Autocomplete
+In "window" tab -> C++ Editor or Java Editor -> Content Assist
+(1) in java, the auto activation triggers with ..abcdefghijklmnopqrstuvwxyz and change delay time with 0
+(2) in c++, change delay time with 0 and the autocomplete triggers need to use alt + / to show
+
+2. Mark Occurrences is that the feature of show of char which is seleted
+(1) change color by the "Annotation"
+
+3. Folding
+that can make function and class so on to fold to make the code viewer clearly
+
+4. Include Library 
+*_ Boost libarary
+* 1. Project -> property
+* 2. C++ Builder-> setting
+* 3. GCC C++ Linker-> Libraries
+* 4. ADD libary where is apllied below
+* (1) if file add with libaryname+_+ filename ,e.g. boost_timer
+* (2) else e.g. timer.hpp do not need to add anything
+* 5. ADD library search path e.g. /user/include (where is apt-get install application)
