@@ -39,7 +39,7 @@ def cpImg(srcFile, imgName, dstFile, model):
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[1])
 		if(srcFile == './database/'):
-			if(int(index[1] == model-1)):
+			if(int(index[1] == model):
 				nestedFilename = os.path.join(dstFile, nestedFile[2])
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[3])
