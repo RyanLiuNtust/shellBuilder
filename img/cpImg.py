@@ -33,16 +33,17 @@ def cpImg(srcFile, imgName, dstFile, model):
 		img  = Image.open( os.path.join(os.getcwd(), src))
 		dst  = ''
 		nestedFilename = ''
-		if (int(index[1]) - 1)/3 == model:
-			if(srcFile == './database/'):
-				nestedFilename = os.path.join(dstFile, nestedFile[2])
-			else:
+		if(srcFile == './test/'):
+			if (int(index[1]) - 1)/3 == model:
 				nestedFilename = os.path.join(dstFile, nestedFile[0])
-		else:
-			if(srcFile == './database/'):
-				nestedFilename = os.path.join(dstFile, nestedFile[3])
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[1])
+		if(srcFile == './database/'):
+			if(int(index[1] == model-1))
+				nestedFilename = os.path.join(dstFile, nestedFile[2])
+			else:
+				nestedFilename = os.path.join(dstFile, nestedFile[3])
+
 		dst  = os.path.join(nestedFilename, name)
 		print dst
 		img.save(str(dst),format='JPEG')
