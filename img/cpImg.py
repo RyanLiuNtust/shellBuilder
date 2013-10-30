@@ -24,46 +24,51 @@ def makeDirExist(dirPath):
 	except OSError as exception:
 		if exception.errno != errno.EEXIST:
 			raise
-
-def cpImg(srcFile, imgName, dstFile, sample, model):
+# image type #sample_#person
+# training has one pic per person
+# test has three pic per person
+def cpImg(srcFile, imgName, dstFile, sample, person,  ext):
 	nestedFile = ['test_p','test_n','train_p','train_n']
+	if(ext == 'jpg'):
+		ext = 'JPEG'
 	for name in imgName:
-		index	 = re.findall(r'\d+', name)
-		preIndex = re.findall('r\d+', index[0])
+		index	= re.findall(r'\d+', name)
 		src  = os.path.join(srcFile, name)
 		img  = Image.open( os.path.join(os.getcwd(), src))
 		dst  = ''
 		nestedFilename = ''
 		if(srcFile == './database/'):
-			if preIndex != sample:
-				if int(index[1]) == model:
+			if (int(index[0]) != sample):
+				if int(index[1]) == person:
 					nestedFilename = os.path.join(dstFile, nestedFile[2])
 				else:
 					nestedFilename = os.path.join(dstFile, nestedFile[3])
 				dst  = os.path.join(nestedFilename, name)
 				print dst
-				img.save(str(dst),format='JPEG')
+				img.save(str(dst),format=ext)
 		else:
-			if preIndex == sample:
-				if (int(index[1])-1)/3 == model:
+			if (int(index[0]) == sample):
+				if (int(index[1])-1)/3 == person:
 					nestedFilename = os.path.join(dstFile, nestedFile[0])
 				else:
 					nestedFilename = os.path.join(dstFile, nestedFile[1])
 				dst  = os.path.join(nestedFilename, name)
 				print dst
-				img.save(str(dst),format='JPEG')
+				img.save(str(dst),format=ext)
 
 def getFilename(srcFile, extension):
 	return [f for f in os.listdir(srcFile) if f.endswith(extension)]
 
 
-ext = 'jpg'
-for model in range(5):
-	sample = model/20
-	path = os.path.join(os.getcwd(), str(sample)+'_'+str(model))
+ext = 'bmp'
+total_person_per_sample = 20
+for model in range(120):
+	sample = model/total_person_per_sample
+	person = model - sample*total_person_per_sample
+	path = os.path.join(os.getcwd(), str(sample)+'_'+str(person))
 	makeDirExist(path)
 	db   = getFilename('./database/', ext)
 	test = getFilename('./test/', ext)
-	cpImg('./database/', db, path, sample, model)
-	cpImg('./test/', test, path, sample, model)
+	cpImg('./database/', db, path, sample, person, ext)
+	cpImg('./test/', test, path, sample, person, ext)
 
