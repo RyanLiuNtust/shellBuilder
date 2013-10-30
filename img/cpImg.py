@@ -39,20 +39,20 @@ def cpImg(srcFile, imgName, dstFile, model):
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[1])
 		if(srcFile == './database/'):
-			if(int(index[1] == model-1))
+			if(int(index[1] == model-1)):
 				nestedFilename = os.path.join(dstFile, nestedFile[2])
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[3])
 
 		dst  = os.path.join(nestedFilename, name)
 		print dst
-		img.save(str(dst),format='JPEG')
+		img.save(str(dst),format='BMP')
 
 def getFilename(srcFile, extension):
 	return [f for f in os.listdir(srcFile) if f.endswith(extension)]
 
 
-ext = 'jpg'
+ext = 'bmp'
 for model in range(5):
 	path = os.path.join(os.getcwd(), str(model))
 	makeDirExist(path)
