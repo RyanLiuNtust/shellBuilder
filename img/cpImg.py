@@ -30,10 +30,9 @@ def cpImg(srcFile, imgName, dstFile, model):
 	for name in imgName:
 		index = re.findall(r'\d+', name)
 		src  = os.path.join(srcFile, name)
-		img  = Image.open( os.path.join(os.path.dirname(__file__), src))
+		img  = Image.open( os.path.join(os.getcwd(), src))
 		dst  = ''
 		nestedFilename = ''
-		print index[1]
 		if (int(index[1]) - 1)/3 == model:
 			if(srcFile == './database/'):
 				nestedFilename = os.path.join(dstFile, nestedFile[2])
@@ -45,7 +44,7 @@ def cpImg(srcFile, imgName, dstFile, model):
 			else:
 				nestedFilename = os.path.join(dstFile, nestedFile[1])
 		dst  = os.path.join(nestedFilename, name)
-		print 'dst=' + dst
+		print dst
 		img.save(str(dst),format='JPEG')
 
 def getFilename(srcFile, extension):
@@ -54,7 +53,7 @@ def getFilename(srcFile, extension):
 
 ext = 'jpg'
 for model in range(5):
-	path = os.path.join(os.path.dirname(__file__), str(model))
+	path = os.path.join(os.getcwd(), str(model))
 	makeDirExist(path)
 	db = getFilename('./database/', ext)
 	test = getFilename('./test/', ext)
