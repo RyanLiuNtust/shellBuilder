@@ -2,6 +2,9 @@
 echo "update......."
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 
+#install wifi connection
+sudo apt-get -y install wicd
+
 # install the guake terminal that could use F12 to start the terminal
 echo "install guake......."
 sudo apt-get -y install guake

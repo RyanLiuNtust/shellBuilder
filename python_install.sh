@@ -16,12 +16,7 @@ curl -O http://python-distribute.org/distribute_setup.py
 sudo python distribute setup.py
 sudo easy install pip 
 
-
-
-
-
-
-
-
-
-
+#libary
+#facebook e.g. pip install -e git+git://github.com/pythonforfacebook/facebook-sdk.git#egg=facebook-sdk
+#opencv
+#graph
