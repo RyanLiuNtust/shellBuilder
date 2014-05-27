@@ -6,4 +6,7 @@ sudo apt-get install guake
 sudo apt-get install libboost-all-dev
 # install the photo edit
 sudo apt-get install gimp
+# install the octave
+sudo apt-get install octave
+sudo apt-get install octave-symbolic
 
