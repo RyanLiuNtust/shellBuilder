@@ -1,12 +1,14 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install -y gcc
-wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1204/x86_64/cuda-repo-ubuntu1204_5.5-0_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu1204_5.5-0_amd64.deb
-sudo apt-get update
-sudo apt-get install -y cuda
-export PATH=/usr/local/cuda-5.5/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
+#sudo apt-get update
+#sudo apt-get install -y gcc
+#wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1204/x86_64/cuda-repo-ubuntu1204_5.5-0_amd64.deb
+#sudo dpkg -i cuda-repo-ubuntu1204_5.5-0_amd64.deb
+#sudo apt-get update
+#sudo apt-get install -y cuda
+#export PATH=/usr/local/cuda-5.5/bin:$PATH
+#export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
+wget http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.bz2/download
+tar -bzip2 -xf boost_1_55_0.tar.bz2
 
 
 #sudo su
@@ -29,3 +31,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
 #make & make install
 #python
 
+
+sudo apt-get install -y gfortran
+
+git clone git://github.com/xianyi/OpenBLAS
+cd OpenBLAS/
+make
